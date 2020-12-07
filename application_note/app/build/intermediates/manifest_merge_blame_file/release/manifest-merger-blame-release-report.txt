@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.application_note"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+8-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:6:5-66
+11-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:6:22-63
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:7:5-80
+12-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:7:22-78
+13
+14    <application
+14-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:10:5-48:19
+15        android:allowBackup="true"
+15-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:11:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+17        android:icon="@mipmap/ic_app_note"
+17-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:12:9-43
+18        android:label="Note"
+18-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:13:9-29
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:14:9-54
+20        android:supportsRtl="true"
+20-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:15:9-35
+21        android:theme="@style/AppTheme" >
+21-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:16:9-40
+22        <activity android:name="com.example.application_note.Activities.MainActivity" >
+22-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:18:9-24:20
+22-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:18:19-58
+23            <intent-filter>
+23-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:19:13-23:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:20:17-69
+24-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:20:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:22:17-77
+26-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:22:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="com.example.application_note.Activities.Categories" />
+29-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:25:9-58
+29-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:25:19-56
+30        <activity android:name="com.example.application_note.Activities.NewNote" />
+30-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:26:9-55
+30-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:26:19-53
+31        <activity android:name="com.example.application_note.Activities.NoCat_activ" />
+31-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:27:9-69
+31-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:27:19-57
+32        <activity android:name="com.example.application_note.Activities.Corb_activity" />
+32-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:28:9-62
+32-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:28:19-59
+33        <activity android:name="com.example.application_note.Activities.update_note" />
+33-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:29:9-60
+33-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:29:19-57
+34        <activity
+34-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:30:9-33:15
+35            android:name="com.example.application_note.Activities.notifActivity"
+35-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:31:13-53
+36            android:parentActivityName="com.example.application_note.Activities.MainActivity" />
+36-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:32:13-66
+37        <activity
+37-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:34:9-37:15
+38            android:name="com.example.application_note.Activities.notifActivity2"
+38-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:35:13-54
+39            android:parentActivityName="com.example.application_note.Activities.MainActivity" />
+39-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:36:13-66
+40        <activity
+40-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:38:9-41:69
+41            android:name="com.example.application_note.Activities.Main2Activity"
+41-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:39:13-53
+42            android:configChanges="colorMode|orientation|keyboardHidden|fontScale|touchscreen|screenSize|screenLayout|density"
+42-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:40:13-127
+43            android:parentActivityName="com.example.application_note.Activities.MainActivity" />
+43-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:41:13-66
+44        <activity
+44-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:42:9-44:48
+45            android:name="com.example.application_note.Helper.AndroidDatabaseManager"
+45-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:43:13-58
+46            android:label="@string/app_name" />
+46-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:44:13-45
+47
+48        <receiver android:name="com.example.application_note.AlertReceiver" />
+48-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:46:9-51
+48-->G:\applicationversion4-20191204T185842Z-001\applicationversion4\application_note\app\src\main\AndroidManifest.xml:46:19-48
+49    </application>
+50
+51</manifest>

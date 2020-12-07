@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.application_note.Activities.MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/notes"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10px"
+            android:text="MY NOTES"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_list"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchbar"
+        />
+    <com.example.application_note.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchbar"
+        style="@style/MaterialSearchBarLight"
+        android:layout_marginTop="120px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mt_navIconEnabled="true"
+        app:mt_speechMode="false"
+        app:mt_hint="Search"
+        app:mt_placeholder="Search"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_add" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

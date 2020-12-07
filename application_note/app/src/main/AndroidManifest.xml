@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.application_note">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_note"
+        android:label="MyNote"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activities.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Categories"/>
+        <activity android:name=".Activities.NewNote"/>
+        <activity android:name=".Activities.NoCat_activ"></activity>
+        <activity android:name=".Activities.Corb_activity" />
+        <activity android:name=".Activities.update_note" />
+        <activity
+            android:name=".Activities.notifActivity"
+            android:parentActivityName=".Activities.MainActivity"
+            />
+        <activity
+            android:name=".Activities.notifActivity2"
+            android:parentActivityName=".Activities.MainActivity"
+            />
+        <activity
+            android:name=".Activities.Main2Activity"
+            android:configChanges="colorMode|orientation|keyboardHidden|fontScale|touchscreen|screenSize|screenLayout|density"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Helper.AndroidDatabaseManager"
+            android:label="@string/app_name" />
+
+        <receiver android:name=".AlertReceiver" />
+
+    </application>
+
+</manifest>

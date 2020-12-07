@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/nav_header_main" >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_corbeille"
+            android:title="Corbeille" />
+
+    </group>
+
+    <item android:title="Categories">
+        <menu>
+            <item
+                android:id="@+id/nav_categ"
+                android:title="Categorie" />
+            <item
+                android:id="@+id/nav_nocateg"
+                android:title="Sans categorie" />
+        </menu>
+    </item>
+
+</menu>
